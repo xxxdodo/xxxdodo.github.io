@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>地点介绍页</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, #f8fbff, #e6f2ff);
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 6vw;
+    background: linear-gradient(90deg, #007BFF, #00c6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .img-wrapper img {
+    width: 85%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
+  }
+  .btn-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .btn {
+    display: inline-block;
+    width: 80%;
+    max-width: 320px;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #00c6ff, #007BFF);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 5vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    box-shadow: 0 6px 16px rgba(0,86,179,0.5);
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+  <h1>Welcome to the Trinity College</h1>
+  
+  <div class="img-wrapper">
+    <img src="img/thirty.jpg"position">
+  </div>
+
+  <div class="btn-group">
+    <a href="https://www.trinity.ox.ac.uk/" class="btn" target="_blank">🏛 Official Website</a>
+    <a href="Trinity_beautiful_photo.html" class="btn" target="_self">📍 Beautiful Views</a>
+  </div>
+
+</body>
+</html>

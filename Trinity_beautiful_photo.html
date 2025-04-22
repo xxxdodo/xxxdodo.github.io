@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Beautiful Photos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom, #f8fbff, #e6f2ff);
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      font-size: 7vw;
+      background: linear-gradient(90deg, #00c6ff, #007BFF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 800;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .back-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #00c6ff, #007BFF);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 5vw;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-align: center;
+      width: 70%;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+      transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      background: linear-gradient(90deg, #007BFF, #0056b3);
+      box-shadow: 0 6px 16px rgba(0,86,179,0.5);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Beautiful Views</h1>
+
+  <div class="gallery">
+    <img src="img/311.jpg" alt="view1">
+    <img src="img/312.jpg" alt="view2">
+    <img src="img/313.jpg" alt="view3">
+  </div>
+
+  <a href="Trinity.html" class="back-btn">⬅️ Back</a>
+
+</body>
+</html>
